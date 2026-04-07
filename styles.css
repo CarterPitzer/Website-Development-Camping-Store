@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#menu {
+    display: none;
+    margin-top: 10px;
+}
+
+#menu p {
+    margin: 5px 0;
+}
