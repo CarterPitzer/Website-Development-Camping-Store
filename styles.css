@@ -1,79 +1,3 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* BODY */
-body {
-    background: #f4f4f4;
-    color: #333;
-}
-
-/* HEADER */
-header {
-    background: #2c3e50;
-    color: white;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 {
-    font-size: 24px;
-}
-
-/* NAVIGATION */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* HAMBURGER MENU */
-.menu-btn {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background: #2c3e50;
-        padding: 20px;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        width: 200px;
-        border-radius: 8px;
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-}
-
-/* PAGE TITLES */
-h2 {
-    text-align: center;
-    margin: 20px 0;
-}
-
 /* PRODUCT GRID */
 .product-grid {
     display: grid;
@@ -142,7 +66,8 @@ form label {
     font-weight: bold;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0 20px 0;
