@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Camping Store</h1>
+    <span class="menu-btn" onclick="toggleMenu()">☰</span>
+    <nav>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="popular.html">Popular Items</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="track-order.html">Track Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h2>Track Your Order</h2>
+
+<form onsubmit="submitTracking(event)">
+    <label>Order Number</label>
+    <input type="text" required>
+
+    <button type="submit">Track Order</button>
+
+    <p id="track-success" class="success"></p>
+</form>
+
+</body>
+</html>
