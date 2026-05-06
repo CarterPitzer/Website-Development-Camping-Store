@@ -11,13 +11,19 @@
 <body>
 
 <header>
-    <h1>Camping Store</h1>
+    <div>
+        <img src="images/logo.png" class="logo" alt="Camping Store logo">
+        <h1>Camping Store</h1>
+    </div>
+
     <span class="menu-btn" onclick="toggleMenu()">☰</span>
+
     <nav>
         <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="popular.html">Popular Items</a></li>
             <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="cart.html">Cart</a></li>
             <li><a href="track-order.html">Track Order</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="login.html">Login</a></li>
@@ -27,13 +33,12 @@
 
 <h2>Login</h2>
 
-<form onsubmit="submitLogin(event)" class="form-box">
+<form onsubmit="submitLogin(event)">
+    <label>Email:</label>
+    <input type="email" required>
 
-    <label for="login-email">Email</label>
-    <input id="login-email" type="email" required>
-
-    <label for="login-password">Password</label>
-    <input id="login-password" type="password" required>
+    <label>Password:</label>
+    <input type="password" required>
 
     <button type="submit">Login</button>
 
