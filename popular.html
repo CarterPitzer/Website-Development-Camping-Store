@@ -11,13 +11,19 @@
 <body>
 
 <header>
-    <h1>Camping Store</h1>
+    <div>
+        <img src="images/logo.png" class="logo" alt="Camping Store logo">
+        <h1>Camping Store</h1>
+    </div>
+
     <span class="menu-btn" onclick="toggleMenu()">☰</span>
+
     <nav>
         <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="popular.html">Popular Items</a></li>
             <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="cart.html">Cart</a></li>
             <li><a href="track-order.html">Track Order</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="login.html">Login</a></li>
@@ -29,52 +35,28 @@
 
 <div class="product-grid">
 
-    <!-- Coleman Sundome 2P -->
     <div class="product-card">
-        <img src="https://images-na.ssl-images-amazon.com/images/I/81t7Z0dZJxL._AC_SL1500_.jpg" alt="Coleman Sundome 2-Person Tent">
-        <h3>Coleman Sundome 2-Person Tent</h3>
-        <p>Durable, weatherproof, fast setup.</p>
-        <p class="price">$79.99</p>
-    </div>
-
-    <!-- Osprey Atmos AG 65 -->
-    <div class="product-card">
-        <img src="https://images.osprey.com/is/image/OspreyPacks/ATMOS65_AG_MENS_S23_SIDE_BLUE" alt="Osprey Atmos AG 65">
+        <img src="images/osprey-atmos-65.jpg" alt="Osprey Atmos AG 65">
         <h3>Osprey Atmos AG 65</h3>
         <p>Anti‑gravity suspension, premium comfort.</p>
         <p class="price">$269.99</p>
+        <button class="add-btn" onclick="addToCart('Osprey Atmos AG 65', 269.99)">Add to Cart</button>
     </div>
 
-    <!-- Jetboil Flash -->
     <div class="product-card">
-        <img src="https://www.jetboil.com/on/demandware.static/-/Sites-jetboil-master/default/dw3c1e3f0a/images/large/flash-carbon.jpg" alt="Jetboil Flash Cooking System">
+        <img src="images/jetboil-flash.jpg" alt="Jetboil Flash Cooking System">
         <h3>Jetboil Flash Cooking System</h3>
         <p>Fast‑boil stove for backpackers.</p>
         <p class="price">$114.95</p>
+        <button class="add-btn" onclick="addToCart('Jetboil Flash Cooking System', 114.95)">Add to Cart</button>
     </div>
 
-    <!-- Black Diamond Apollo Lantern -->
     <div class="product-card">
-        <img src="https://blackdiamondequipment.com/cdn/shop/products/BD6207130004_ApolloLantern_Graphite_3QTR_2048x.jpg" alt="Black Diamond Apollo Lantern">
-        <h3>Black Diamond Apollo Lantern</h3>
-        <p>Bright, rechargeable, reliable.</p>
-        <p class="price">$69.95</p>
-    </div>
-
-    <!-- REI Co-op Flash 22 -->
-    <div class="product-card">
-        <img src="https://www.rei.com/media/7d1b3e1d-6c4b-4c8e-9b3d-2c4e1f3a2b1c" alt="REI Co-op Flash 22">
+        <img src="images/rei-flash-22.jpg" alt="REI Co-op Flash 22">
         <h3>REI Co‑op Flash 22</h3>
         <p>Lightweight daypack for fast hikes.</p>
         <p class="price">$59.95</p>
-    </div>
-
-    <!-- MSR Hubba NX Solo -->
-    <div class="product-card">
-        <img src="https://www.msrgear.com/on/demandware.static/-/Sites-msr-master-catalog/default/dw9c1e3f0a/images/large/10328-hubba-nx-green-primary.jpg" alt="MSR Hubba NX Solo Tent">
-        <h3>MSR Hubba NX Solo Tent</h3>
-        <p>Ultralight, compact, premium build.</p>
-        <p class="price">$449.95</p>
+        <button class="add-btn" onclick="addToCart('REI Co-op Flash 22', 59.95)">Add to Cart</button>
     </div>
 
 </div>
