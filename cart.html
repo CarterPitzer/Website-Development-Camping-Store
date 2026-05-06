@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Camping Store</h1>
+    <span class="menu-btn" onclick="toggleMenu()">☰</span>
+    <nav>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="popular.html">Popular Items</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="track-order.html">Track Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h2>Your Cart</h2>
+
+<div class="cart-container">
+
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+
+        <tbody id="cart-items">
+            <!-- Items will be inserted here by script.js -->
+        </tbody>
+    </table>
+
+    <div class="cart-total-box">
+        <h3>Total: <span id="cart-total">$0.00</span></h3>
+        <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+
+</div>
+
+</body>
+</html>
