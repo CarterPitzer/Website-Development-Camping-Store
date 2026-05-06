@@ -27,15 +27,16 @@
 
 <h2>Contact Us</h2>
 
-<form onsubmit="submitContact(event)">
-    <label>Name</label>
-    <input type="text" required>
+<form onsubmit="submitContact(event)" class="form-box">
 
-    <label>Email</label>
-    <input type="email" required>
+    <label for="contact-name">Name</label>
+    <input id="contact-name" type="text" required>
 
-    <label>Message</label>
-    <textarea rows="5" required></textarea>
+    <label for="contact-email">Email</label>
+    <input id="contact-email" type="email" required>
+
+    <label for="contact-message">Message</label>
+    <textarea id="contact-message" rows="5" required></textarea>
 
     <button type="submit">Send Message</button>
 
