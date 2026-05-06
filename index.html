@@ -1,119 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camping Store - Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <meta charset="UTF-8" />
+    <title>Trailhead Outfitters | Camping Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+    <!-- Header / Nav -->
+    <header class="header">
+        <div class="logo">Trailhead Outfitters</div>
+        <nav class="nav">
+            <a href="#tents">Tents</a>
+            <a href="#sleeping">Sleeping</a>
+            <a href="#cooking">Cooking</a>
+            <a href="#lighting">Lighting</a>
+        </nav>
+    </header>
 
-<header>
-    <h1>Camping Store</h1>
-    <span class="menu-btn" onclick="toggleMenu()">☰</span>
-    <nav>
-        <ul id="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="popular.html">Popular Items</a></li>
-            <li><a href="catalog.html">Catalog</a></li>
-            <li><a href="track-order.html">Track Order</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Gear Up For Your Next Adventure</h1>
+            <p>Real brands. Real gear. Everything you need for your next camping trip.</p>
+            <a href="#products" class="btn-primary">Shop Gear</a>
+        </div>
+    </section>
 
-<h2>Featured Products</h2>
+    <!-- Products -->
+    <main id="products" class="products">
 
-<div class="product-grid">
+        <!-- Tents -->
+        <section id="tents" class="category">
+            <h2>Tents</h2>
+            <div class="product-grid">
 
-    <div class="product-card">
-        <img src="images/mountainpro-2p-tent.jpg" alt="MountainPro 2-Person Tent">
-        <h3>MountainPro 2-Person Tent</h3>
-        <p>Lightweight, waterproof, easy setup.</p>
-        <p class="price">$129.99</p>
-    </div>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Coleman Sundome Tent" />
+                    <h3>Coleman Sundome 4-Person Tent</h3>
+                    <p>Classic dome tent with Coleman’s WeatherTec™ system, large windows, and easy setup—perfect for weekend camping.</p>
+                    <p class="price">$139.99</p>
+                    <button class="btn-secondary">Add to Cart</button>
+                </article>
 
-    <div class="product-card">
-        <img src="images/trailmaster-45l-backpack.jpg" alt="TrailMaster 45L Backpack">
-        <h3>TrailMaster 45L Backpack</h3>
-        <p>Durable, breathable, multi‑pocket design.</p>
-        <p class="price">$89.99</p>
-    </div>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1504280390368-3971ec0e8d12" alt="Ozark Trail Cabin Tent" />
+                    <h3>Ozark Trail 6-Person Instant Cabin Tent</h3>
+                    <p>Instant setup cabin-style tent with pre-attached poles—great for families who want fast, simple camp setup.</p>
+                    <p class="price">$179.99</p>
+                    <button class="btn-secondary">Add to Cart</button>
+                </article>
 
-    <div class="product-card">
-        <img src="images/summit-4p-tent.jpg" alt="Summit 4-Person Tent">
-        <h3>Summit 4‑Person Tent</h3>
-        <p>Spacious interior with rainfly.</p>
-        <p class="price">$199.99</p>
-    </div>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1508182311256-e3f7d5f1c5a8" alt="REI Co-op Half Dome Tent" />
+                    <h3>REI Co‑op Half Dome SL 2+ Tent</h3>
+                    <p>Lightweight backpacking tent with excellent ventilation and extra interior space for two plus gear.</p>
+                    <p class="price">$329.00</p>
+                    <button class="btn-secondary">Add to Cart</button>
+                </article>
 
-    <div class="product-card">
-        <img src="images/firelite-portable-stove.jpg" alt="FireLite Portable Stove">
-        <h3>FireLite Portable Stove</h3>
-        <p>Compact, efficient, wind‑resistant.</p>
-        <p class="price">$39.99</p>
-    </div>
+            </div>
+        </section>
 
-    <div class="product-card">
-        <img src="images/ridgerunner-60l-pack.jpg" alt="RidgeRunner 60L Pack">
-        <h3>RidgeRunner 60L Pack</h3>
-        <p>Heavy‑duty frame, hydration compatible.</p>
-        <p class="price">$119.99</p>
-    </div>
+        <!-- Sleeping -->
+        <section id="sleeping" class="category">
+            <h2>Sleeping Bags & Pads</h2>
+            <div class="product-grid">
 
-    <div class="product-card">
-        <img src="images/everpeak-solo-tent.jpg" alt="EverPeak Solo Tent">
-        <h3>EverPeak Solo Tent</h3>
-        <p>Perfect for single hikers.</p>
-        <p class="price">$79.99</p>
-    </div>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6" alt="Coleman Brazos Sleeping Bag" />
+                    <h3>Coleman Brazos Cold Weather Sleeping Bag</h3>
+                    <p>Cozy rectangular sleeping bag rated for cool nights—great value for car camping and scouts.</p>
+                    <p class="price">$59.99</p>
+                    <button class="btn-secondary">Add to Cart</button>
+                </article>
 
-    <div class="product-card">
-        <img src="images/glowpro-led-lantern.jpg" alt="GlowPro LED Lantern">
-        <h3>GlowPro LED Lantern</h3>
-        <p>Bright, long‑lasting, rechargeable.</p>
-        <p class="price">$24.99</p>
-    </div>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1501700493788-fa1a4fc9fe62" alt="Ozark Trail Sleeping Bag" />
+                    <h3>Ozark Trail 40°F Sleeping Bag</h3>
+                    <p>Lightweight synthetic sleeping bag ideal for mild-weather camping and sleepovers.</p>
+                    <p class="price">$34.99</p>
+                    <button class="btn-secondary">Add to Cart</button>
+                </article>
 
-    <div class="product-card">
-        <img src="images/hikemax-30l-daypack.jpg" alt="HikeMax 30L Daypack">
-        <h3>HikeMax 30L Daypack</h3>
-        <p>Lightweight and weather‑resistant.</p>
-        <p class="price">$59.99</p>
-    </div>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c" alt="Therm-a-Rest Z Lite Sol Pad" />
+                    <h3>Therm-a-Rest Z Lite Sol Sleeping Pad</h3>
+                    <p>Durable closed-cell foam pad with reflective coating for extra warmth—backpacking classic.</p>
+                    <p class="price">$54.95</p>
+                    <button class="btn-secondary">Add to Cart</button>
+                </article>
 
-    <div class="product-card">
-        <img src="images/forestdome-family-tent.jpg" alt="ForestDome Family Tent">
-        <h3>ForestDome Family Tent</h3>
-        <p>Fits up to 6 people comfortably.</p>
-        <p class="price">$249.99</p>
-    </div>
+            </div>
+        </section>
 
-    <div class="product-card">
-        <img src="images/heatwave-dualburner-stove.jpg" alt="HeatWave Dual Burner Stove">
-        <h3>HeatWave Dual Burner Stove</h3>
-        <p>Perfect for campsite cooking.</p>
-        <p class="price">$69.99</p>
-    </div>
+        <!-- Cooking -->
+        <section id="cooking" class="category">
+            <h2>Stoves & Cooking Gear</h2>
+            <div class="product-grid">
 
-    <div class="product-card">
-        <img src="images/peaktrail-50l-backpack.jpg" alt="PeakTrail 50L Backpack">
-        <h3>PeakTrail 50L Backpack</h3>
-        <p>Comfortable fit with airflow padding.</p>
-        <p class="price">$99.99</p>
-    </div>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1523419409543-3e4f83b9b4c9" alt="Coleman Classic Propane Stove" />
+                    <h3>Coleman Classic Propane Stove</h3>
+                    <p>Iconic two-burner propane stove with adjustable burners—reliable performance at the campsite.</p>
+                    <p class="price">$89.99</p>
+                    <button class="btn-secondary">Add to Cart</button>
+                </article>
 
-    <div class="product-card">
-        <img src="images/stormguard-tent.jpg" alt="StormGuard Tent">
-        <h3>StormGuard Tent</h3>
-        <p>All‑weather protection.</p>
-        <p class="price">$159.99</p>
-    </div>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1500534314211-0a24cd03f2c0" alt="Camp Chef Everest Stove" />
+                    <h3>Camp Chef Everest 2X Stove</h3>
+                    <p>High-output, compact two-burner stove with great simmer control for serious camp chefs.</p>
+                    <p class="price">$169.99</p>
+                    <button class="btn-secondary">Add to Cart</button>
+                </article>
 
-</div>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814" alt="Stanley Adventure Cook Set" />
+                    <h3>Stanley Adventure Camp Cook Set</h3>
+                    <p>Stainless steel pot with two insulated cups—packs small and works on most camp stoves.</p>
+                    <p class="price">$27.99</p>
+                    <button class="btn-secondary">Add to Cart</button>
+                </article>
 
+            </div>
+        </section>
+
+        <!-- Lighting -->
+        <section id="lighting" class="category">
+            <h2>Lighting</h2>
+            <div class="product-grid">
+
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1500534314211-0a24cd03f2c0" alt="Coleman LED Lantern" />
+                    <h3>Coleman 1000 Lumens LED Lantern</h3>
+                    <p>Bright, durable LED lantern with multiple modes and long battery life for basecamp.</p>
+                    <p class="price">$49.99</p>
+                    <button class="btn-secondary">Add to Cart</button>
+                </article>
+
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1523419409543-3e4f83b9b4c9" alt="Ozark Trail LED Flashlight" />
+                    <h3>Ozark Trail 500 Lumen LED Flashlight</h3>
+                    <p>Rugged aluminum flashlight with multiple modes—great for glovebox or gear bin.</p>
+                    <p class="price">$19.99</p>
+                    <button class="btn-secondary">Add to Cart</button>
+                </article>
+
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814" alt="Black Diamond Spot Headlamp" />
+                    <h3>Black Diamond Spot 400 Headlamp</h3>
+                    <p>Compact, waterproof headlamp with 400 lumens and multiple beam settings for trail or camp.</p>
+                    <p class="price">$49.95</p>
+                    <button class="btn-secondary">Add to Cart</button>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Trailhead Outfitters. All product names are trademarks of their respective owners.</p>
+    </footer>
 </body>
 </html>
