@@ -27,12 +27,13 @@
 
 <h2>Login</h2>
 
-<form onsubmit="submitLogin(event)">
-    <label>Email</label>
-    <input type="email" required>
+<form onsubmit="submitLogin(event)" class="form-box">
 
-    <label>Password</label>
-    <input type="password" required>
+    <label for="login-email">Email</label>
+    <input id="login-email" type="email" required>
+
+    <label for="login-password">Password</label>
+    <input id="login-password" type="password" required>
 
     <button type="submit">Login</button>
 
