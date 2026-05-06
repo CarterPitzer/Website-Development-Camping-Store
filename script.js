@@ -16,7 +16,7 @@ function submitLogin(event) {
         "Login successful!";
 }
 
-// TRACK ORDER (FIXED)
+// TRACK ORDER
 function submitTracking(event) {
     event.preventDefault();
     let orderNum = document.getElementById("order-number").value;
@@ -40,7 +40,7 @@ function loadCart() {
     const cartItems = document.getElementById("cart-items");
     const cartTotal = document.getElementById("cart-total");
 
-    if (!cartItems) return; // Only run on cart page
+    if (!cartItems) return;
 
     cartItems.innerHTML = "";
     let total = 0;
@@ -73,5 +73,4 @@ function checkout() {
     loadCart();
 }
 
-// Load cart on page load
 window.onload = loadCart;
