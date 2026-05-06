@@ -11,13 +11,19 @@
 <body>
 
 <header>
-    <h1>Camping Store</h1>
+    <div>
+        <img src="images/logo.png" class="logo" alt="Camping Store logo">
+        <h1>Camping Store</h1>
+    </div>
+
     <span class="menu-btn" onclick="toggleMenu()">☰</span>
+
     <nav>
         <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="popular.html">Popular Items</a></li>
             <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="cart.html">Cart</a></li>
             <li><a href="track-order.html">Track Order</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="login.html">Login</a></li>
@@ -27,9 +33,9 @@
 
 <h2>Track Your Order</h2>
 
-<form onsubmit="submitTracking(event)" class="form-box">
-    <label for="order-number">Order Number</label>
-    <input id="order-number" type="text" required>
+<form onsubmit="submitTracking(event)">
+    <label>Order Number:</label>
+    <input type="text" id="order-number" required>
 
     <button type="submit">Track Order</button>
 
